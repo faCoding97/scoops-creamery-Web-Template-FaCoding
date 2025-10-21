@@ -1,4 +1,12 @@
+// types/site.ts
 export type NavItem = { label: string; href: string };
+
+export type Contact = {
+  email: string;
+  location: string;
+  note?: string; // اختیاری
+  phone?: string; // اختیاری
+};
 
 export type Flavor = {
   slug: string;
@@ -24,6 +32,6 @@ export type SiteData = {
   };
   flavors: Flavor[];
   about: { heading: string; content: string };
-  contact: { email: string; location: string; note?: string };
+  contact: Contact; // ✅ از Contact استفاده کن
   footer: { year: number };
 };

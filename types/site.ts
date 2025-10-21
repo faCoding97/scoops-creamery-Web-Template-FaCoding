@@ -5,7 +5,7 @@ export type Contact = {
   email: string;
   location: string;
   note?: string; // اختیاری
-  phone?: string; // اختیاری
+  phone?: "+27 60 000 0000"; // اختیاری
 };
 
 export type Flavor = {

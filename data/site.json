@@ -1,0 +1,90 @@
+{
+  "site": {
+    "name": "Scoops Creamery",
+    "baseUrl": "https://scoops.example.com",
+    "logo": "/og.png"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Menu",
+      "href": "/menu"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "hero": {
+    "title": "Handcrafted Ice Cream, Baked Daily Joy.",
+    "subtitle": "Small-batch scoops, sorbets, and vegan delights\u2014made with real ingredients.",
+    "ctaLabel": "See Menu",
+    "ctaHref": "/menu",
+    "image": "/images/hero/sundae.png"
+  },
+  "flavors": [
+    {
+      "slug": "strawberry-swirl",
+      "name": "Strawberry Swirl",
+      "category": "dairy",
+      "price": "$2.90 / scoop",
+      "image": "/images/flavors/strawberry.png",
+      "tags": ["Fruity", "Classic"],
+      "shortDescription": "Creamy base with ribbons of real strawberry.",
+      "description": "Fresh strawberries folded into a Madagascar vanilla base for a bright, classic taste.",
+      "ingredients": ["Milk", "Cream", "Sugar", "Strawberries", "Vanilla"]
+    },
+    {
+      "slug": "mint-chip",
+      "name": "Mint Chip",
+      "category": "dairy",
+      "price": "$3.20 / scoop",
+      "image": "/images/flavors/mint.png",
+      "tags": ["Refreshing", "Chocolate"],
+      "shortDescription": "Cool mint with generous dark chocolate shards.",
+      "description": "Natural mint extract and hand-chopped chocolate for a clean finish and satisfying crunch.",
+      "ingredients": ["Milk", "Cream", "Sugar", "Cocoa", "Mint extract"]
+    },
+    {
+      "slug": "mango-sorbet",
+      "name": "Mango Sorbet",
+      "category": "sorbet",
+      "price": "$2.80 / scoop",
+      "image": "/images/flavors/mango.png",
+      "tags": ["Dairy-free", "Tropical"],
+      "shortDescription": "Bright mango flavor, ultra-smooth sorbet.",
+      "description": "Sun-ripened mango pur\u00e9e churned into a silky, dairy-free sorbet with intense fruit notes.",
+      "ingredients": ["Mango", "Sugar", "Water", "Lime"]
+    },
+    {
+      "slug": "dark-chocolate-vegan",
+      "name": "Dark Chocolate (Vegan)",
+      "category": "vegan",
+      "price": "$3.40 / scoop",
+      "image": "/images/flavors/dark-choco.png",
+      "tags": ["Vegan", "Rich"],
+      "shortDescription": "Coconut-milk base with 70% cacao.",
+      "description": "Deep cocoa flavor on a creamy coconut base\u2014rich, balanced, and completely dairy-free.",
+      "ingredients": ["Coconut milk", "Sugar", "Cocoa", "Vanilla"]
+    }
+  ],
+  "about": {
+    "heading": "About Scoops",
+    "content": "We churn our ice cream in-house every morning using simple, seasonal ingredients. Our menu rotates weekly with sorbets and vegan options."
+  },
+  "contact": {
+    "email": "hello@scoops.example.com",
+    "location": "Main Street, Your City",
+    "note": "This is a demo UI\u2014no messages will be sent."
+  },
+  "footer": {
+    "year": 2025
+  }
+}

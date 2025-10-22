@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const config = {
+const nextConfig = {
   reactStrictMode: true,
-  images: { remotePatterns: [] },
+  experimental: {
+    optimizePackageImports: ['qrcode.react']
+  }
 };
-export default config;
+export default nextConfig;

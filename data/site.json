@@ -1,8 +1,15 @@
 {
-  "site": {
-    "name": "Scoops Creamery",
-    "baseUrl": "https://scoops.example.com",
-    "logo": "/og.png"
+  "theme": {
+    "brand": "#e11d48",
+    "accent": "#14b8a6",
+    "bg": "#fff7ed",
+    "fg": "#0b1220"
+  },
+  "layout": {
+    "containerMax": "1200px",
+    "sectionY": "5rem",
+    "heroHeight": "72vh",
+    "sliderHeight": "68vh"
   },
   "nav": [
     {
@@ -19,72 +26,275 @@
     },
     {
       "label": "Contact",
-      "href": "/contact"
+      "href": "/#contact"
+    },
+    {
+      "label": "Blog (ignored)",
+      "href": "/blog"
     }
   ],
   "hero": {
-    "title": "Handcrafted Ice Cream, Baked Daily Joy.",
-    "subtitle": "Small-batch scoops, sorbets, and vegan delights\u2014made with real ingredients.",
-    "ctaLabel": "See Menu",
-    "ctaHref": "/menu",
-    "image": "/images/hero/sundae.png"
+    "slides": [
+      {
+        "eyebrow": "Small-Batch",
+        "title": "Handcrafted Scoops, Daily",
+        "description": "Fresh dairy and fruit pur\u00e9es churned every morning in Gqeberha.",
+        "primaryCta": {
+          "label": "Browse Flavors",
+          "href": "/menu"
+        },
+        "image": "/images/hero-1.jpg",
+        "alt": "Berry ice-cream scoops in waffle cones"
+      },
+      {
+        "eyebrow": "Vegan Sorbets",
+        "title": "Bright, Bold & Dairy\u2011Free",
+        "description": "Sunshine-in-a-cup sorbets with zero dairy and full flavour.",
+        "primaryCta": {
+          "label": "See Sorbets",
+          "href": "/menu"
+        },
+        "image": "/images/hero-2.jpg",
+        "alt": "Cups of colourful vegan sorbet"
+      },
+      {
+        "eyebrow": "Shakes & Sundaes",
+        "title": "Whipped to Perfection",
+        "description": "Classic sundaes and thick milkshakes\u2014made to order.",
+        "primaryCta": {
+          "label": "Order In-Store",
+          "href": "#contact"
+        },
+        "image": "/images/hero-3.jpg",
+        "alt": "Ice-cream sundae topped with cherries"
+      }
+    ]
   },
-  "flavors": [
+  "valueProps": [
     {
-      "slug": "strawberry-swirl",
-      "name": "Strawberry Swirl",
-      "category": "dairy",
-      "price": "$2.90 / scoop",
-      "image": "/images/flavors/strawberry.png",
-      "tags": ["Fruity", "Classic"],
-      "shortDescription": "Creamy base with ribbons of real strawberry.",
-      "description": "Fresh strawberries folded into a Madagascar vanilla base for a bright, classic taste.",
-      "ingredients": ["Milk", "Cream", "Sugar", "Strawberries", "Vanilla"]
+      "title": "Fresh Daily",
+      "description": "We churn in small batches to keep flavours lively and texture ultra\u2011creamy."
     },
     {
-      "slug": "mint-chip",
-      "name": "Mint Chip",
-      "category": "dairy",
-      "price": "$3.20 / scoop",
-      "image": "/images/flavors/mint.png",
-      "tags": ["Refreshing", "Chocolate"],
-      "shortDescription": "Cool mint with generous dark chocolate shards.",
-      "description": "Natural mint extract and hand-chopped chocolate for a clean finish and satisfying crunch.",
-      "ingredients": ["Milk", "Cream", "Sugar", "Cocoa", "Mint extract"]
+      "title": "Local Ingredients",
+      "description": "Eastern Cape dairy, seasonal fruit, and fair\u2011trade chocolate."
     },
     {
-      "slug": "mango-sorbet",
-      "name": "Mango Sorbet",
-      "category": "sorbet",
-      "price": "$2.80 / scoop",
-      "image": "/images/flavors/mango.png",
-      "tags": ["Dairy-free", "Tropical"],
-      "shortDescription": "Bright mango flavor, ultra-smooth sorbet.",
-      "description": "Sun-ripened mango pur\u00e9e churned into a silky, dairy-free sorbet with intense fruit notes.",
-      "ingredients": ["Mango", "Sugar", "Water", "Lime"]
-    },
-    {
-      "slug": "dark-chocolate-vegan",
-      "name": "Dark Chocolate (Vegan)",
-      "category": "vegan",
-      "price": "$3.40 / scoop",
-      "image": "/images/flavors/dark-choco.png",
-      "tags": ["Vegan", "Rich"],
-      "shortDescription": "Coconut-milk base with 70% cacao.",
-      "description": "Deep cocoa flavor on a creamy coconut base\u2014rich, balanced, and completely dairy-free.",
-      "ingredients": ["Coconut milk", "Sugar", "Cocoa", "Vanilla"]
+      "title": "Friendly Service",
+      "description": "Samples on request and smiles guaranteed."
     }
   ],
-  "about": {
-    "heading": "About Scoops",
-    "content": "We churn our ice cream in-house every morning using simple, seasonal ingredients. Our menu rotates weekly with sorbets and vegan options."
-  },
+  "features": [
+    {
+      "title": "Party Tubs",
+      "description": "1.5 L and 2 L tubs for birthdays, office treats and picnics."
+    },
+    {
+      "title": "Seasonal Specials",
+      "description": "Limited flavours inspired by local markets and holidays."
+    },
+    {
+      "title": "Contactless Payments",
+      "description": "Tap, chip, or scan\u2014quick and secure at the till."
+    }
+  ],
+  "menu": [
+    {
+      "id": "ds-vanilla",
+      "title": "Double Scoop Vanilla",
+      "category": "Scoops",
+      "priceZAR": 45,
+      "tags": ["Classic"],
+      "allergens": ["Milk"],
+      "description": "Madagascar vanilla with a silky finish.",
+      "image": "/images/menu/vanilla.jpg"
+    },
+    {
+      "id": "ds-choc",
+      "title": "Double Scoop Chocolate",
+      "category": "Scoops",
+      "priceZAR": 45,
+      "tags": ["Best-seller"],
+      "allergens": ["Milk"],
+      "description": "Rich cocoa, slow\u2011churned for extra body.",
+      "image": "/images/menu/chocolate.jpg"
+    },
+    {
+      "id": "ds-straw",
+      "title": "Double Scoop Strawberry",
+      "category": "Scoops",
+      "priceZAR": 45,
+      "tags": ["Fruit"],
+      "allergens": ["Milk"],
+      "description": "Real berry pur\u00e9e gives a bright, tart pop.",
+      "image": "/images/menu/strawberry.jpg"
+    },
+    {
+      "id": "sun-classic",
+      "title": "Classic Sundae",
+      "category": "Sundaes",
+      "priceZAR": 65,
+      "tags": ["Whipped cream"],
+      "allergens": ["Milk", "Tree Nuts"],
+      "description": "Vanilla scoops, chocolate sauce, nuts & a cherry.",
+      "image": "/images/menu/sundae-classic.jpg"
+    },
+    {
+      "id": "sun-brownie",
+      "title": "Warm Brownie Sundae",
+      "category": "Sundaes",
+      "priceZAR": 85,
+      "tags": ["Warm"],
+      "allergens": ["Milk", "Eggs", "Gluten"],
+      "description": "Fudgy brownie topped with two scoops & sauce.",
+      "image": "/images/menu/sundae-brownie.jpg"
+    },
+    {
+      "id": "shake-vanilla",
+      "title": "Vanilla Milkshake",
+      "category": "Milkshakes",
+      "priceZAR": 55,
+      "tags": ["Thick"],
+      "allergens": ["Milk"],
+      "description": "Thick & creamy, blended to order.",
+      "image": "/images/menu/shake-vanilla.jpg"
+    },
+    {
+      "id": "shake-choc",
+      "title": "Chocolate Milkshake",
+      "category": "Milkshakes",
+      "priceZAR": 55,
+      "tags": ["Best-seller"],
+      "allergens": ["Milk"],
+      "description": "Cocoa\u2011rich shake with whipped cream.",
+      "image": "/images/menu/shake-choc.jpg"
+    },
+    {
+      "id": "cone",
+      "title": "Waffle Cone",
+      "category": "Cones",
+      "priceZAR": 20,
+      "tags": ["Add-on"],
+      "allergens": ["Gluten"],
+      "description": "Crisp golden waffle cone.",
+      "image": "/images/menu/cone.jpg"
+    },
+    {
+      "id": "cup-small",
+      "title": "Cup (Small)",
+      "category": "Cups",
+      "priceZAR": 35,
+      "tags": ["Single"],
+      "allergens": [],
+      "description": "Single scoop in a small cup.",
+      "image": "/images/menu/cup-small.jpg"
+    },
+    {
+      "id": "cup-medium",
+      "title": "Cup (Medium)",
+      "category": "Cups",
+      "priceZAR": 55,
+      "tags": ["Double"],
+      "allergens": [],
+      "description": "Two scoops in a medium cup.",
+      "image": "/images/menu/cup-medium.jpg"
+    },
+    {
+      "id": "sorbet-mango",
+      "title": "Mango Sorbet",
+      "category": "Specials",
+      "priceZAR": 50,
+      "tags": ["Vegan", "Gluten-free"],
+      "allergens": [],
+      "description": "Tropical and dairy\u2011free sunshine.",
+      "image": "/images/menu/sorbet-mango.jpg"
+    },
+    {
+      "id": "sorbet-lemon",
+      "title": "Lemon Sorbet",
+      "category": "Specials",
+      "priceZAR": 50,
+      "tags": ["Vegan"],
+      "allergens": [],
+      "description": "Zesty, clean finish and completely dairy\u2011free.",
+      "image": "/images/menu/sorbet-lemon.jpg"
+    },
+    {
+      "id": "special-caramel",
+      "title": "Salted Caramel Scoop",
+      "category": "Specials",
+      "priceZAR": 55,
+      "tags": ["Salted"],
+      "allergens": ["Milk"],
+      "description": "House caramel folded into creamy base.",
+      "image": "/images/menu/salted-caramel.jpg"
+    },
+    {
+      "id": "tub-15",
+      "title": "Party Tub 1.5 L",
+      "category": "Specials",
+      "priceZAR": 120,
+      "tags": ["Take\u2011home"],
+      "allergens": ["Milk"],
+      "description": "Your favourite flavour in a party\u2011ready tub.",
+      "image": "/images/menu/party-tub.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The mango sorbet tastes like summer. Perfect after a beachfront walk!",
+      "name": "Thandi M.",
+      "role": "Local Guide"
+    },
+    {
+      "quote": "Kids love the brownie sundae. Staff are super patient and kind.",
+      "name": "Andre V.",
+      "role": "Dad of two"
+    },
+    {
+      "quote": "Fresh flavours and quick service. Best scoops in PE.",
+      "name": "Naledi K."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you have vegan options?",
+      "a": "Yes\u2014our sorbets are dairy\u2011free and many flavours can be made without toppings containing allergens."
+    },
+    {
+      "q": "How do you handle allergens?",
+      "a": "We prepare with care, but traces of milk, eggs, gluten, soy, or nuts may remain as we use shared equipment."
+    },
+    {
+      "q": "Do you deliver?",
+      "a": "We\u2019re take\u2011away and sit\u2011in. For party tubs, please phone or WhatsApp to arrange pick\u2011up."
+    },
+    {
+      "q": "Can I place a party order?",
+      "a": "Absolutely! Order 24 hours in advance for custom tubs and toppings."
+    },
+    {
+      "q": "What payments do you accept?",
+      "a": "Cards, tap, and mobile wallets."
+    }
+  ],
   "contact": {
-    "email": "hello@scoops.example.com",
-    "location": "Main Street, Your City",
-    "note": "This is a demo UI\u2014no messages will be sent."
+    "phone": "+27 41 555 1234",
+    "whatsapp": "+27 64 000 9876",
+    "email": "hello@scoops.elixflare.com",
+    "address": "Humewood, Port Elizabeth (Gqeberha)",
+    "mapQuery": "Scoops Creamery Elixflare, Port Elizabeth",
+    "mapEmbedSrc": "https://maps.google.com/maps?q=Gqeberha%20Port%20Elizabeth&z=13&output=embed"
   },
-  "footer": {
-    "year": 2025
+  "routes": {
+    "menuRoot": "/menu"
+  },
+  "org": {
+    "brandName": "Scoops Creamery",
+    "domain": "https://scoops.elixflare.com",
+    "social": {
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/"
+    }
   }
 }

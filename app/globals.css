@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables set from data/site.json in layout */
+:root {
+  --brand: #e11d48;
+  --accent: #14b8a6;
+  --bg: #fff7ed;
+  --fg: #0b1220;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  @apply text-[var(--fg)] bg-[var(--bg)];
+}
+
+/* Panel & anchor utilities */
+.anchor-section { scroll-margin-top: 84px; }
+@media (min-width: 768px){ .anchor-section { scroll-margin-top: 96px; } }
+
+/* Title divider (used by SectionTitle) */
+.section-title { display: grid; gap: .5rem; }
+.section-title .divider {
+  height: 2px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  border-radius: 1px;
+  opacity: .9;
+}
+
+/* Map iframe responsiveness */
+.embed-responsive iframe { width: 100%; height: 360px; border: 0; }
+@media (min-width: 768px) { .embed-responsive iframe { height: 460px; } }
+
+/* Hover FX: frosted ring + gentle scale */
+.fx-card {
+  @apply transition-transform duration-200 ease-out shadow-elev-1 hover:shadow-elev-8;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fx-card:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+}
+
+/* Simple focus ring using brand color */
+*:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Carousel base */
+.carousel {
+  scroll-snap-type: x mandatory;
+}
+.carousel > * {
+  scroll-snap-align: start;
+}
+
+/* Gradient button utility */
+.btn-gradient {
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  color: white;
+}
+
+
+/* Kill all default controls of Swiper if any leftover configs exist */
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination,
+.swiper-scrollbar {
+  display: none !important;
+}
+
+/* اطمینان از نبود اسکرول داخلی */
+.swiper, .swiper-wrapper, .swiper-slide {
+  overflow: hidden;
+}

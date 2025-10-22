@@ -1,8 +1,8 @@
-import type { MetadataRoute } from "next";
-import data from "@/data/site.json";
+import { MetadataRoute } from "next";
+
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: [{ userAgent: "*", allow: "/" }],
-    sitemap: `${data.site.baseUrl}/sitemap.xml`,
+    rules: { userAgent: "*", allow: ["/"] },
+    sitemap: "https://scoops.elixflare.com/sitemap.xml",
   };
 }
